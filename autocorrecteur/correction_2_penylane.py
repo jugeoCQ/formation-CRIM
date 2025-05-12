@@ -57,7 +57,7 @@ def correction_exercice5(reponse):
     Correction de l'exercice 1 : Simulation d'un qubit.
     """
     # Réponse attendue
-    attendu = np.array([0.0])
+    attendu = np.array(0.)
 
     # Appel de la fonction de correction
     corriger_une_reponse(reponse, attendu, nom_exo="Exercice 4", tol=0, max_essais=3, info="Révisez la simulation du qubit.")

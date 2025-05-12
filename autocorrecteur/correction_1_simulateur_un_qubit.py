@@ -46,7 +46,8 @@ def correction_exercice5(reponse):
     Correction de l'exercice 5 : Simulation d'un qubit.
     """
     # Réponse attendue
+    rounded_rep = {k: int(np.round(v, -2)) for k, v in reponse.items()}
     attendu = {0: 500, 1: 500}
 
     # Appel de la fonction de correction
-    corriger_une_reponse(reponse, attendu, nom_exo="Exercice 5", tol=50, max_essais=3, info="Révisez la simulation du qubit.")
+    corriger_une_reponse(rounded_rep, attendu, nom_exo="Exercice 5", tol=50, max_essais=3, info="Révisez la simulation du qubit.")
